@@ -12,7 +12,7 @@ import (
 	"testing"
 	"unicode"
 
-	"github.com/ltcsuite/ltcutil"
+	"github.com/litecoinfinance/ltcutil"
 )
 
 // TestAppDataDir tests the API for AppDataDir to ensure it gives expected
