@@ -2,14 +2,14 @@
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
-package ltcutil
+package ltfnutil
 
 import (
 	"bytes"
 	"io"
 
-	"github.com/litecoinfinance/ltcd/chaincfg/chainhash"
-	"github.com/litecoinfinance/ltcd/wire"
+	"github.com/litecoinfinance/ltfnd/chaincfg/chainhash"
+	"github.com/litecoinfinance/ltfnd/wire"
 )
 
 // TxIndexUnknown is the value returned for a transaction index that is unknown.

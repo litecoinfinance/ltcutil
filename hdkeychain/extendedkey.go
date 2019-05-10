@@ -18,11 +18,11 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/litecoinfinance/ltcd/btcec"
-	"github.com/litecoinfinance/ltcd/chaincfg"
-	"github.com/litecoinfinance/ltcd/chaincfg/chainhash"
-	"github.com/litecoinfinance/ltcutil"
-	"github.com/litecoinfinance/ltcutil/base58"
+	"github.com/litecoinfinance/ltfnd/btcec"
+	"github.com/litecoinfinance/ltfnd/chaincfg"
+	"github.com/litecoinfinance/ltfnd/chaincfg/chainhash"
+	"github.com/litecoinfinance/ltfnutil"
+	"github.com/litecoinfinance/ltfnutil/base58"
 )
 
 const (
@@ -324,7 +324,7 @@ func (k *ExtendedKey) Child(i uint32) (*ExtendedKey, error) {
 
 	// The fingerprint of the parent for the derived child is the first 4
 	// bytes of the RIPEMD160(SHA256(parentPubKey)).
-	parentFP := ltcutil.Hash160(k.pubKeyBytes())[:4]
+	parentFP := ltfnutil.Hash160(k.pubKeyBytes())[:4]
 	return NewExtendedKey(k.version, childKey, childChainCode, parentFP,
 		k.depth+1, i, isPrivate), nil
 }
@@ -377,9 +377,9 @@ func (k *ExtendedKey) ECPrivKey() (*btcec.PrivateKey, error) {
 
 // Address converts the extended key to a standard litecoinfinance pay-to-pubkey-hash
 // address for the passed network.
-func (k *ExtendedKey) Address(net *chaincfg.Params) (*ltcutil.AddressPubKeyHash, error) {
-	pkHash := ltcutil.Hash160(k.pubKeyBytes())
-	return ltcutil.NewAddressPubKeyHash(pkHash, net)
+func (k *ExtendedKey) Address(net *chaincfg.Params) (*ltfnutil.AddressPubKeyHash, error) {
+	pkHash := ltfnutil.Hash160(k.pubKeyBytes())
+	return ltfnutil.NewAddressPubKeyHash(pkHash, net)
 }
 
 // paddedAppend appends the src byte slice to dst, returning the new slice.

@@ -7,7 +7,7 @@ package base58_test
 import (
 	"testing"
 
-	"github.com/litecoinfinance/ltcutil/base58"
+	"github.com/litecoinfinance/ltfnutil/base58"
 )
 
 var checkEncodingStringTests = []struct {

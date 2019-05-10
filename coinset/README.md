@@ -1,11 +1,11 @@
 coinset
 =======
 
-[![Build Status](http://img.shields.io/travis/litecoinfinance/ltcutil.svg)]
-(https://travis-ci.org/litecoinfinance/ltcutil) [![ISC License]
+[![Build Status](http://img.shields.io/travis/litecoinfinance/ltfnutil.svg)]
+(https://travis-ci.org/litecoinfinance/ltfnutil) [![ISC License]
 (http://img.shields.io/badge/license-ISC-blue.svg)](http://copyfree.org)
 [![GoDoc](http://img.shields.io/badge/godoc-reference-blue.svg)]
-(http://godoc.org/github.com/litecoinfinance/ltcutil/coinset)
+(http://godoc.org/github.com/litecoinfinance/ltfnutil/coinset)
 
 Package coinset provides litecoinfinance-specific convenience functions for selecting
 from and managing sets of unspent transaction outpoints (UTXOs).
@@ -18,7 +18,7 @@ report.
 ## Installation and Updating
 
 ```bash
-$ go get -u github.com/litecoinfinance/ltcutil/coinset
+$ go get -u github.com/litecoinfinance/ltfnutil/coinset
 ```
 
 ## Usage

@@ -2,14 +2,14 @@
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
-package ltcutil_test
+package ltfnutil_test
 
 import (
 	"testing"
 
-	"github.com/litecoinfinance/ltcd/btcec"
-	"github.com/litecoinfinance/ltcd/chaincfg"
-	. "github.com/litecoinfinance/ltcutil"
+	"github.com/litecoinfinance/ltfnd/btcec"
+	"github.com/litecoinfinance/ltfnd/chaincfg"
+	. "github.com/litecoinfinance/ltfnutil"
 )
 
 func TestEncodeDecodeWIF(t *testing.T) {

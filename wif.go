@@ -2,16 +2,16 @@
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
-package ltcutil
+package ltfnutil
 
 import (
 	"bytes"
 	"errors"
 
-	"github.com/litecoinfinance/ltcd/btcec"
-	"github.com/litecoinfinance/ltcd/chaincfg"
-	"github.com/litecoinfinance/ltcd/chaincfg/chainhash"
-	"github.com/litecoinfinance/ltcutil/base58"
+	"github.com/litecoinfinance/ltfnd/btcec"
+	"github.com/litecoinfinance/ltfnd/chaincfg"
+	"github.com/litecoinfinance/ltfnd/chaincfg/chainhash"
+	"github.com/litecoinfinance/ltfnutil/base58"
 )
 
 // ErrMalformedPrivateKey describes an error where a WIF-encoded private

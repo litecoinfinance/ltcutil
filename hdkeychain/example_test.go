@@ -7,8 +7,8 @@ package hdkeychain_test
 import (
 	"fmt"
 
-	"github.com/litecoinfinance/ltcd/chaincfg"
-	"github.com/litecoinfinance/ltcutil/hdkeychain"
+	"github.com/litecoinfinance/ltfnd/chaincfg"
+	"github.com/litecoinfinance/ltfnutil/hdkeychain"
 )
 
 // This example demonstrates how to generate a cryptographically random seed

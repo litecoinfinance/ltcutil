@@ -16,7 +16,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/litecoinfinance/ltcd/chaincfg"
+	"github.com/litecoinfinance/ltfnd/chaincfg"
 )
 
 // TestBIP0032Vectors tests the vectors provided by [BIP32] to ensure the

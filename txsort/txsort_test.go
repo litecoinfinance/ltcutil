@@ -11,8 +11,8 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/litecoinfinance/ltcd/wire"
-	"github.com/litecoinfinance/ltcutil/txsort"
+	"github.com/litecoinfinance/ltfnd/wire"
+	"github.com/litecoinfinance/ltfnutil/txsort"
 )
 
 // TestSort ensures the transaction sorting works according to the BIP.

@@ -9,10 +9,10 @@ import (
 	"encoding/hex"
 	"testing"
 
-	"github.com/litecoinfinance/ltcd/chaincfg/chainhash"
-	"github.com/litecoinfinance/ltcd/wire"
-	"github.com/litecoinfinance/ltcutil"
-	"github.com/litecoinfinance/ltcutil/bloom"
+	"github.com/litecoinfinance/ltfnd/chaincfg/chainhash"
+	"github.com/litecoinfinance/ltfnd/wire"
+	"github.com/litecoinfinance/ltfnutil"
+	"github.com/litecoinfinance/ltfnutil/bloom"
 )
 
 func TestMerkleBlock3(t *testing.T) {
@@ -29,7 +29,7 @@ func TestMerkleBlock3(t *testing.T) {
 		t.Errorf("TestMerkleBlock3 DecodeString failed: %v", err)
 		return
 	}
-	blk, err := ltcutil.NewBlockFromBytes(blockBytes)
+	blk, err := ltfnutil.NewBlockFromBytes(blockBytes)
 	if err != nil {
 		t.Errorf("TestMerkleBlock3 NewBlockFromBytes failed: %v", err)
 		return

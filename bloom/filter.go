@@ -9,10 +9,10 @@ import (
 	"math"
 	"sync"
 
-	"github.com/litecoinfinance/ltcd/chaincfg/chainhash"
-	"github.com/litecoinfinance/ltcd/txscript"
-	"github.com/litecoinfinance/ltcd/wire"
-	"github.com/litecoinfinance/ltcutil"
+	"github.com/litecoinfinance/ltfnd/chaincfg/chainhash"
+	"github.com/litecoinfinance/ltfnd/txscript"
+	"github.com/litecoinfinance/ltfnd/wire"
+	"github.com/litecoinfinance/ltfnutil"
 )
 
 // ln2Squared is simply the square of the natural log of 2.
@@ -270,7 +270,7 @@ func (bf *Filter) maybeAddOutpoint(pkScript []byte, outHash *chainhash.Hash, out
 // update flags set via the loaded filter if needed.
 //
 // This function MUST be called with the filter lock held.
-func (bf *Filter) matchTxAndUpdate(tx *ltcutil.Tx) bool {
+func (bf *Filter) matchTxAndUpdate(tx *ltfnutil.Tx) bool {
 	// Check if the filter matches the hash of the transaction.
 	// This is useful for finding transactions when they appear in a block.
 	matched := bf.matches(tx.Hash()[:])
@@ -335,7 +335,7 @@ func (bf *Filter) matchTxAndUpdate(tx *ltcutil.Tx) bool {
 // update flags set via the loaded filter if needed.
 //
 // This function is safe for concurrent access.
-func (bf *Filter) MatchTxAndUpdate(tx *ltcutil.Tx) bool {
+func (bf *Filter) MatchTxAndUpdate(tx *ltfnutil.Tx) bool {
 	bf.mtx.Lock()
 	match := bf.matchTxAndUpdate(tx)
 	bf.mtx.Unlock()

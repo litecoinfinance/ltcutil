@@ -2,7 +2,7 @@
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
-package ltcutil
+package ltfnutil
 
 import (
 	"bytes"
@@ -12,10 +12,10 @@ import (
 	"strings"
 
 	"github.com/btcsuite/golangcrypto/ripemd160"
-	"github.com/litecoinfinance/ltcd/btcec"
-	"github.com/litecoinfinance/ltcd/chaincfg"
-	"github.com/litecoinfinance/ltcutil/base58"
-	"github.com/litecoinfinance/ltcutil/bech32"
+	"github.com/litecoinfinance/ltfnd/btcec"
+	"github.com/litecoinfinance/ltfnd/chaincfg"
+	"github.com/litecoinfinance/ltfnutil/base58"
+	"github.com/litecoinfinance/ltfnutil/bech32"
 )
 
 // UnsupportedWitnessVerError describes an error where a segwit address being

@@ -5,10 +5,10 @@
 package bloom
 
 import (
-	"github.com/litecoinfinance/ltcd/blockchain"
-	"github.com/litecoinfinance/ltcd/chaincfg/chainhash"
-	"github.com/litecoinfinance/ltcd/wire"
-	"github.com/litecoinfinance/ltcutil"
+	"github.com/litecoinfinance/ltfnd/blockchain"
+	"github.com/litecoinfinance/ltfnd/chaincfg/chainhash"
+	"github.com/litecoinfinance/ltfnd/wire"
+	"github.com/litecoinfinance/ltfnutil"
 )
 
 // merkleBlock is used to house intermediate information needed to generate a
@@ -79,7 +79,7 @@ func (m *merkleBlock) traverseAndBuild(height, pos uint32) {
 
 // NewMerkleBlock returns a new *wire.MsgMerkleBlock and an array of the matched
 // transaction index numbers based on the passed block and filter.
-func NewMerkleBlock(block *ltcutil.Block, filter *Filter) (*wire.MsgMerkleBlock, []uint32) {
+func NewMerkleBlock(block *ltfnutil.Block, filter *Filter) (*wire.MsgMerkleBlock, []uint32) {
 	numTx := uint32(len(block.Transactions()))
 	mBlock := merkleBlock{
 		numTx:       numTx,

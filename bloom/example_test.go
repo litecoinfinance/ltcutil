@@ -9,9 +9,9 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/litecoinfinance/ltcd/chaincfg/chainhash"
-	"github.com/litecoinfinance/ltcd/wire"
-	"github.com/litecoinfinance/ltcutil/bloom"
+	"github.com/litecoinfinance/ltfnd/chaincfg/chainhash"
+	"github.com/litecoinfinance/ltfnd/wire"
+	"github.com/litecoinfinance/ltfnutil/bloom"
 )
 
 // This example demonstrates how to create a new bloom filter, add a transaction

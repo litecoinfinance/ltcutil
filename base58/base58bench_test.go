@@ -8,7 +8,7 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/litecoinfinance/ltcutil/base58"
+	"github.com/litecoinfinance/ltfnutil/base58"
 )
 
 func BenchmarkBase58Encode(b *testing.B) {

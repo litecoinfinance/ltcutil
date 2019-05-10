@@ -1,9 +1,9 @@
 bloom
 =====
 
-[![Build Status](http://img.shields.io/travis/litecoinfinance/ltcutil.svg)](https://travis-ci.org/litecoinfinance/ltcutil) 
+[![Build Status](http://img.shields.io/travis/litecoinfinance/ltfnutil.svg)](https://travis-ci.org/litecoinfinance/ltfnutil) 
 [![ISC License](http://img.shields.io/badge/license-ISC-blue.svg)](http://copyfree.org)
-[![GoDoc](http://img.shields.io/badge/godoc-reference-blue.svg)](http://godoc.org/github.com/litecoinfinance/ltcutil/bloom)
+[![GoDoc](http://img.shields.io/badge/godoc-reference-blue.svg)](http://godoc.org/github.com/litecoinfinance/ltfnutil/bloom)
 
 Package bloom provides an API for dealing with litecoinfinance-specific bloom filters.
 
@@ -15,13 +15,13 @@ report.
 ## Installation and Updating
 
 ```bash
-$ go get -u github.com/litecoinfinance/ltcutil/bloom
+$ go get -u github.com/litecoinfinance/ltfnutil/bloom
 ```
 
 ## Examples
 
 * [NewFilter Example]
-  (http://godoc.org/github.com/litecoinfinance/ltcutil/bloom#example-NewFilter)  
+  (http://godoc.org/github.com/litecoinfinance/ltfnutil/bloom#example-NewFilter)  
   Demonstrates how to create a new bloom filter, add a transaction hash to it,
   and check if the filter matches the transaction.
 
