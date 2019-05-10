@@ -12,7 +12,7 @@ interface. The functions are only exported while the tests are being run.
 package ltfnutil
 
 import (
-	"github.com/Roasbeef/ltfnutil/bech32"
+	"github.com/litecoinfinance/ltfnutil/bech32"
 	"github.com/litecoinfinance/ltfnd/btcec"
 	"github.com/litecoinfinance/ltfnutil/base58"
 	"golang.org/x/crypto/ripemd160"
