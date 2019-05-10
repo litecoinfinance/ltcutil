@@ -5,10 +5,10 @@
 package ltcutil
 
 const (
-	// SatoshiPerBitcent is the number of satoshi in one litecoin cent.
+	// SatoshiPerBitcent is the number of satoshi in one litecoinfinance cent.
 	SatoshiPerBitcent = 1e6
 
-	// SatoshiPerBitcoin is the number of satoshi in one litecoin (1 BTC).
+	// SatoshiPerBitcoin is the number of satoshi in one litecoinfinance (1 BTC).
 	SatoshiPerBitcoin = 1e8
 
 	// MaxSatoshi is the maximum transaction amount allowed in satoshi.

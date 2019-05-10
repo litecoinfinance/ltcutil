@@ -40,7 +40,7 @@ type WIF struct {
 	// uncompressed (65-byte) one.
 	CompressPubKey bool
 
-	// netID is the litecoin network identifier byte used when
+	// netID is the litecoinfinance network identifier byte used when
 	// WIF encoding the private key.
 	netID byte
 }
@@ -57,7 +57,7 @@ func NewWIF(privKey *btcec.PrivateKey, net *chaincfg.Params, compress bool) (*WI
 }
 
 // IsForNet returns whether or not the decoded WIF structure is associated
-// with the passed litecoin network.
+// with the passed litecoinfinance network.
 func (w *WIF) IsForNet(net *chaincfg.Params) bool {
 	return w.netID == net.PrivateKeyID
 }

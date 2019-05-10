@@ -7,7 +7,7 @@ hdkeychain
 [![GoDoc](http://img.shields.io/badge/godoc-reference-blue.svg)]
 (http://godoc.org/github.com/litecoinfinance/ltcutil/hdkeychain)
 
-Package hdkeychain provides an API for litecoin hierarchical deterministic
+Package hdkeychain provides an API for litecoinfinance hierarchical deterministic
 extended keys (BIP0032).
 
 A comprehensive suite of tests is provided to ensure proper functionality.  See
@@ -25,7 +25,7 @@ report.
 - Easy serialization and deserialization for both private and public extended
   keys
 - Support for custom networks by registering them with chaincfg
-- Obtaining the underlying EC pubkeys, EC privkeys, and associated litecoin
+- Obtaining the underlying EC pubkeys, EC privkeys, and associated litecoinfinance
   addresses ties in seamlessly with existing btcec and ltcutil types which
   provide powerful tools for working with them to do things like sign
   transations and generate payment scripts

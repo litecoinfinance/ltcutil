@@ -5,7 +5,7 @@ bloom
 [![ISC License](http://img.shields.io/badge/license-ISC-blue.svg)](http://copyfree.org)
 [![GoDoc](http://img.shields.io/badge/godoc-reference-blue.svg)](http://godoc.org/github.com/litecoinfinance/ltcutil/bloom)
 
-Package bloom provides an API for dealing with litecoin-specific bloom filters.
+Package bloom provides an API for dealing with litecoinfinance-specific bloom filters.
 
 A comprehensive suite of tests is provided to ensure proper functionality.  See
 `test_coverage.txt` for the gocov coverage report.  Alternatively, if you are

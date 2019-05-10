@@ -7,7 +7,7 @@ coinset
 [![GoDoc](http://img.shields.io/badge/godoc-reference-blue.svg)]
 (http://godoc.org/github.com/litecoinfinance/ltcutil/coinset)
 
-Package coinset provides litecoin-specific convenience functions for selecting
+Package coinset provides litecoinfinance-specific convenience functions for selecting
 from and managing sets of unspent transaction outpoints (UTXOs).
 
 A comprehensive suite of tests is provided to ensure proper functionality.  See
@@ -26,7 +26,7 @@ $ go get -u github.com/litecoinfinance/ltcutil/coinset
 Each unspent transaction outpoint is represented by the Coin interface.  An
 example of a concrete type that implements Coin is coinset.SimpleCoin.
 
-The typical use case for this library is for creating raw litecoin transactions
+The typical use case for this library is for creating raw litecoinfinance transactions
 given a set of Coins that may be spent by the user, for example as below:
 
 ```Go
